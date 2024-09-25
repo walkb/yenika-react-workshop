@@ -15,8 +15,7 @@ export default function ClickCounter() {
         backgroundColor: "#4b5563",
     }
 
-    const style = {
-        
+    const style = { 
     }
 
     return (
@@ -32,7 +31,9 @@ export default function ClickCounter() {
 
                 {/* Another way to add a handler */}
                 <button onClick={() => {
-                    setClicks(clicks - 1);
+                    if (clicks > 0) {
+                        setClicks(clicks - 1);
+                    }
                 }} 
                 className="w-8 h-8 bg-gray-500 rounded-full hover:bg-gray-600 active:bg-gray-700">-</button>
 

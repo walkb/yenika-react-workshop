@@ -16,15 +16,19 @@ export default function Home() {
       <h1 className="font-bold text-2xl">React Component Tutorial</h1>
 
       {/* You'll be modifying the div below. */}
-      <div className="bg-black rounded-full">
+      {/* <div className="bg-black rounded-full">
         <Image src={"/FooterLogo.png"} alt="" width={100} height={100}></Image>
-      </div>
+      </div> */}
+
+      <Logo></Logo>
 
       <h2 className="text-xl text-zinc-600">September 26, 2024</h2>
 
 
       {/* ---------- YOUR CODE BELOW ----------- */}
+      <Profile name={"Walker"}></Profile>
 
+      <ClickCounter></ClickCounter>
 
 
       {/* ---------- YOUR CODE ABOVE ---------- */}
