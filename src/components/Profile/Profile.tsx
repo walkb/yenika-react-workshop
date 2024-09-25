@@ -8,11 +8,7 @@ export default function Profile({name} : {name : string}) {
     const [data, setData] = useState({name: 'User', team: 'Team'})
 
     useEffect(() => {
-        getData(name).then((data) => {
-            console.log("Data fetched!");
-            setData(data);
-            setLoading(false);
-        })
+        // Part 3.1 -- add a "fetch" call using getData function
     }, [])
 
     if (loading) {
@@ -29,8 +25,8 @@ export default function Profile({name} : {name : string}) {
         return (
             <div className="w-96 h-32 rounded bg-gray-200">
                 <div className={"w-full h-full flex flex-col m-2 " + styles.fade}>
-                    <h2 className="text-3xl">Hello {data.name}!</h2>
-                    <p>{data.team}</p>
+                    <h2 className="text-3xl">Hello!</h2>
+                    <p></p>
                 </div>
             </div>
         )
